@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Match Match Game</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+			<div class="skirt-wraper">
+				<button id="skirtButton">Skirt</button>
+				<div id="skirtRadios" class="skirt">
+					<p><input type="radio" name="skirt" value="tree" checked><div class="tree-min"></div></p>
+					<p><input type="radio" name="skirt" value="winter"><div class="winter-min"></div></p>
+					<p><input type="radio" name="skirt" value="beach"><div class="beach-min"></div></p>
+				</div>
+			</div>
+			<div class="level-wraper">
+				<button id="levelButton">Difficulty</button>
+				<div id="levelRadios" class="level">
+					<p><input type="radio" name="level" value="12" checked>6x2</p>
+					<p><input type="radio" name="level" value="18">6x3</p>
+					<p><input type="radio" name="level" value="24">8x3</p>
+				</div>
+			</div>
+			<button id="gameButton" class="game-btn">LET'S START!</button>
+			<div id="timer" class="timer"></div>
+	</header>
+
+	<main id="desk"/>
+		<secion class="rules">
+			<h2>RULES</h2>
+			<p>Memory is a game, where the goal is to find pairs to pictures.</p>
+			<p>When the game begins, all pictures are hidden. It is allow to open only 2 pictures in the same time</p>
+			<h2>HOW TO PLAY</h2>
+			<ol type="1">
+				<li>Select 2 cards to try to match the pictures</li>
+				<li>If pictures are the same, they disappear from the desk</li>
+				<li>If they don't match, they become hidden</li>
+				<li>The player that finds all pairs wins!</li>
+				<li>Have fun!</li>
+			</ol>
+		</secion>
+	</main>
+
+	<script type="text/javascript" src="scripts/Card.js" async></script>
+	<script type="text/javascript" src="scripts/Game.js" async></script>
+	<script type="text/javascript" src="scripts/main.js" async></script>
+</body>
+</html>

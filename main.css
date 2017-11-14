@@ -1,0 +1,273 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+html {
+ 	height: 100%;
+}
+body{
+	padding: 20px 30px;
+	height: 100%;
+	box-sizing: border-box;
+  background-color: #f5f5f0;
+}
+
+main{
+	background-color: green;
+	margin-top: 10px;
+	height: 96%;
+  width: 100%;
+	box-sizing: border-box;
+  overflow: auto;
+  background-color: #e0e0eb;
+  border-radius: 3px;
+  border-top: 3px solid #404040;
+}
+
+header{
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+button{
+    width: 85px;
+    border-radius: 3px;
+    display: inline-block;
+    box-sizing: border-box;
+    font: bold 15px Arial, Helvetica, Clean, sans-serif;
+    padding: 5px 10px;
+    margin-right: 60px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    background: #d1d1d1;
+    background: linear-gradient(#d1d1d1, #afafaf);
+    border: solid 1px #b4b4b4;
+    border-bottom: solid 3px #878787;
+    box-shadow: inset 0 0 0 1px #e3e3e3;
+    color: #555;
+    text-shadow: 0 1px 0 #d6d6d6; 
+}
+    
+button:hover {
+    background: #b7b7b7;
+    background: linear-gradient(#b7b7b7, #c2c2c2);
+    border: solid 1px #a2a2a2;
+    border-bottom: solid 3px #878787;
+    box-shadow: inset 0 0 0 1px #d4d4d4; 
+}
+
+
+.skirt-wraper{
+  width: 100px;
+  float: left;
+  margin-right: 30px;
+}
+
+.skirt{
+  border: 1px solid grey;
+  width: 90px;
+  height: 375px;
+  position: absolute;
+  margin-top: 5px;
+  background-color: white; 
+  visibility: hidden;
+  padding-left: 15px;
+  z-index: 2;
+}
+
+.level-wraper{
+  width: 100px;
+  float: left;
+  margin-right: 30px;
+}
+
+.level{
+  border: 1px solid grey;
+  width: 90px;
+  height: 65px;
+  position: absolute;
+  margin-top: 5px;
+  background-color: white; 
+  visibility: hidden;
+  padding-left: 15px;
+  padding-top: 10px;
+  z-index: 2;
+}
+
+.rules{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.rules h2{
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+li{
+  display: list-item;
+}
+
+button.game-btn{
+  background: none; 
+  background-color: #ff9999;
+  font-weight: 900;
+  width: 130px;
+}
+
+.timer{
+  float: right;
+  font-weight: 900;
+  font-size: 25px;;
+  margin-right: 50px;
+}
+
+.grid-6-col{
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: repeat(6,150px); 
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.grid-8-col{
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: repeat(8,150px); 
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.card.backSide{
+  transform: rotateY(180deg);
+}
+
+.card, .front, .back {
+  width: 150px;
+  height: 200px;
+}
+
+.card {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 1000ms;
+}
+
+.beach-min, .tree-min, .winter-min
+{ display: inline-block; background: url('images/skirt-min-sprite.png') no-repeat; 
+overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.tree-min { background-position: -5px -0px; width: 75px; height: 100px; }
+.winter-min { background-position: -5px -105px; width: 75px; height: 100px; }
+.beach-min { background-position: -5px -210px; width: 75px; height: 100px; }
+
+
+.beach, .tree, .winter
+{ display: inline-block; background: url('images/skirt-sprite.png') no-repeat; 
+overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.beach { background-position: -5px -0px; width: 150px; height: 200px; }
+.tree { background-position: -5px -205px; width: 150px; height: 200px; }
+.winter { background-position: -5px -410px; width: 150px; height: 200px; }
+
+.sprite {
+    background-image: url(images/images-sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-1 {
+    width: 150px;
+    height: 200px;
+    background-position: -5px -5px;
+}
+
+.sprite-10 {
+    width: 150px;
+    height: 200px;
+    background-position: -165px -5px;
+}
+
+.sprite-11 {
+    width: 150px;
+    height: 200px;
+    background-position: -325px -5px;
+}
+
+.sprite-12 {
+    width: 150px;
+    height: 200px;
+    background-position: -5px -215px;
+}
+
+.sprite-2 {
+    width: 150px;
+    height: 200px;
+    background-position: -165px -215px;
+}
+
+.sprite-3 {
+    width: 150px;
+    height: 200px;
+    background-position: -325px -215px;
+}
+
+.sprite-4 {
+    width: 150px;
+    height: 200px;
+    background-position: -5px -425px;
+}
+
+.sprite-5 {
+    width: 150px;
+    height: 200px;
+    background-position: -165px -425px;
+}
+
+.sprite-6 {
+    width: 150px;
+    height: 200px;
+    background-position: -325px -425px;
+}
+
+.sprite-7 {
+    width: 150px;
+    height: 200px;
+    background-position: -485px -5px;
+}
+
+.sprite-8 {
+    width: 150px;
+    height: 200px;
+    background-position: -485px -215px;
+}
+
+.sprite-9 {
+    width: 150px;
+    height: 200px;
+    background-position: -485px -425px;
+}
